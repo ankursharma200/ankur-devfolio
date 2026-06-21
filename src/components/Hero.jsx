@@ -69,14 +69,14 @@ export default function Hero() {
   }, [displayText, currentPhrase, isFinished]);
 
   return (
-    <section id="home" className="section pt-20 md:pt-32 pb-16">
-      <div className="container mx-auto px-6">
+    <section id="home" className="section pt-20 md:pt-32 pb-10 md:pb-16">
+      <div className="container mx-auto px-4 md:px-6">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <motion.div
             variants={leftVariants}
             initial="hidden"
             animate="visible"
-            className="mb-8 md:mb-0 pl-4 md:pl-10"
+            className="mb-6 md:mb-0 pl-2 md:pl-10"
           >
             <motion.p variants={childVariant} className="text-lg text-primary font-medium mb-2">
               Hello, I'm
@@ -86,23 +86,21 @@ export default function Hero() {
               Ankur Sharma
             </motion.h1>
 
-            <motion.h2 variants={childVariant} className="text-xl md:text-2xl mb-6 text-gray-600 dark:text-gray-400">
+            <motion.h2 variants={childVariant} className="text-base md:text-2xl mb-4 md:mb-6 text-gray-600 dark:text-gray-400">
               Web Developer | Software Engineer | Tech Enthusiast
             </motion.h2>
 
-            <motion.div variants={childVariant} className="text-lg mb-8 max-w-lg min-h-[80px]">
+            <motion.div variants={childVariant} className="text-base md:text-lg mb-6 max-w-lg min-h-[100px] md:min-h-[80px]">
               {completedPhrases.map((phrase, i) => (
-                <span key={i} className={`font-semibold ${phrase.color} mr-1`}>
-                  {phrase.text}{' '}
-                </span>
+                <div key={i} className={`font-semibold ${phrase.color}`}>
+                  {phrase.text}
+                </div>
               ))}
               {!isFinished && (
-                <>
-                  <span className={`font-semibold ${phrases[currentPhrase].color}`}>
-                    {displayText}
-                  </span>
+                <div className={`font-semibold ${phrases[currentPhrase].color}`}>
+                  {displayText}
                   <span className="animate-pulse text-primary">|</span>
-                </>
+                </div>
               )}
             </motion.div>
 
@@ -147,7 +145,7 @@ export default function Hero() {
             animate="visible"
             className="order-first md:order-last flex justify-center items-center"
           >
-            <div className="relative w-56 h-56 md:w-72 md:h-72">
+            <div className="relative w-48 h-48 md:w-72 md:h-72">
               {/* Animated gradient ring */}
               <div className="absolute inset-0 rounded-full bg-gradient-to-r from-primary via-purple-500 to-cyan-500 animate-spin-slow opacity-40 blur-sm"></div>
               

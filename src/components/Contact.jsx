@@ -78,9 +78,9 @@ export default function Contact() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: 'easeOut' }}
           viewport={{ once: true }}
-          className="bg-white dark:bg-gray-900 rounded-3xl shadow-xl p-10"
+          className="bg-white dark:bg-gray-900 rounded-3xl shadow-xl p-5 md:p-10"
         >
-          <h2 className="text-5xl font-extrabold tracking-tight bg-gradient-to-r from-indigo-700 via-cyan-500 to-indigo-700 bg-clip-text text-transparent mb-6 text-center">
+          <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight bg-gradient-to-r from-indigo-700 via-cyan-500 to-indigo-700 bg-clip-text text-transparent mb-6 text-center">
             Get in Touch
           </h2>
 
@@ -153,7 +153,8 @@ export default function Contact() {
                     name="user_name"
                     id="name"
                     required
-                    className="w-full px-4 py-3 rounded-xl border border-gray-300 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-primary text-gray-900 dark:text-gray-100"
+                    placeholder="Your name"
+                    className="w-full px-4 py-3 rounded-xl border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary text-gray-900 dark:text-gray-100 placeholder-gray-400 transition-colors"
                   />
                 </div>
                 <div>
@@ -165,7 +166,8 @@ export default function Contact() {
                     name="user_email"
                     id="email"
                     required
-                    className="w-full px-4 py-3 rounded-xl border border-gray-300 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-primary text-gray-900 dark:text-gray-100"
+                    placeholder="your@email.com"
+                    className="w-full px-4 py-3 rounded-xl border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary text-gray-900 dark:text-gray-100 placeholder-gray-400 transition-colors"
                   />
                 </div>
                 <div>
@@ -177,7 +179,8 @@ export default function Contact() {
                     id="message"
                     required
                     rows="4"
-                    className="w-full px-4 py-3 rounded-xl border border-gray-300 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-primary text-gray-900 dark:text-gray-100 resize-none"
+                    placeholder="Write your message..."
+                    className="w-full px-4 py-3 rounded-xl border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary text-gray-900 dark:text-gray-100 placeholder-gray-400 resize-none transition-colors"
                   ></textarea>
                 </div>
                 <button

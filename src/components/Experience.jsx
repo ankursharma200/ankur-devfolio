@@ -65,7 +65,7 @@ export default function Experience() {
           viewport={{ once: true }}
           className="text-center mb-14"
         >
-          <h2 className="text-5xl font-extrabold tracking-tight bg-gradient-to-r from-indigo-700 via-cyan-500 to-indigo-700 bg-clip-text text-transparent mb-2">
+          <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight bg-gradient-to-r from-indigo-700 via-cyan-500 to-indigo-700 bg-clip-text text-transparent mb-2">
             Work Experience
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-300">

@@ -82,7 +82,7 @@ export default function Skills() {
           viewport={{ once: true }}
           className="text-center mb-14"
         >
-          <h2 className="text-5xl font-extrabold tracking-tight bg-gradient-to-r from-indigo-700 via-cyan-500 to-indigo-700 bg-clip-text text-transparent mb-2">
+          <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight bg-gradient-to-r from-indigo-700 via-cyan-500 to-indigo-700 bg-clip-text text-transparent mb-2">
             Technical Skills
           </h2>
           <p className="text-gray-700 dark:text-gray-300 text-lg max-w-xl mx-auto">
