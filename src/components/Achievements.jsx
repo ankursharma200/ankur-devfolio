@@ -86,14 +86,14 @@ export default function Achievements() {
             <motion.div
               key={i}
               variants={item}
-              className="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-md border border-gray-200 dark:border-gray-700 hover:border-primary/50 hover:shadow-lg transition-all duration-300"
+              className="group bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-md border border-gray-200 dark:border-gray-700 hover:border-primary/50 hover:shadow-lg transition-all duration-300"
             >
               <div className="flex items-start gap-4">
                 <div className={`p-3 rounded-xl bg-gray-50 dark:bg-gray-700`}>
                   <achievement.icon className={`text-2xl ${achievement.color}`} />
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-1">
+                  <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-1 group-hover:text-primary transition-colors">
                     {achievement.link ? (
                       <a
                         href={achievement.link}
